@@ -4,13 +4,13 @@
   The HTML page will build the project cards automatically.
 */
 const workThemes = [
-  { id: "educational", label: "Educational", kicker: "EDUCATIONAL", description: "Institutional campuses shaped through master planning, movement, infrastructure and long-term development strategy." },
-  { id: "sports", label: "Sports", kicker: "SPORTS", description: "Inclusive sports environments balancing access, training, recreation and public-realm character." },
-  { id: "community", label: "Community Infrastructure", kicker: "COMMUNITY INFRASTRUCTURE", description: "Community-oriented infrastructure designed around everyday needs, resilience and local use." },
-  { id: "transport", label: "Transport", kicker: "TRANSPORT", description: "Transit-focused planning connecting mobility, feasibility, development potential and user experience." },
-  { id: "tod", label: "TOD", kicker: "TRANSIT-ORIENTED DEVELOPMENT", description: "Mobility and safety studies translated into walkable, legible and place-based urban interventions." },
-  { id: "township", label: "Township Masterplanning", kicker: "TOWNSHIP MASTERPLANNING", description: "Integrated township thinking balancing accessibility, community interaction and residential privacy." },
-  { id: "public-realm", label: "Public Realm", kicker: "PUBLIC REALM", description: "Human-scale urban interventions that strengthen edges, streets, pedestrian movement and civic life." }
+  { id: "educational", label: "Educational", kicker: "EDUCATIONAL", description: "I work on institutional campuses through master planning, movement, infrastructure and long-term development strategy." },
+  { id: "sports", label: "Sports", kicker: "SPORTS", description: "I design inclusive sports environments balancing access, training, recreation and public-realm character." },
+  { id: "community", label: "Community Infrastructure", kicker: "COMMUNITY INFRASTRUCTURE", description: "I approach community infrastructure around everyday needs, resilience and local use." },
+  { id: "transport", label: "Transport", kicker: "TRANSPORT", description: "I connect mobility, feasibility, development potential and user experience through transit-focused planning." },
+  { id: "tod", label: "TOD", kicker: "TRANSIT-ORIENTED DEVELOPMENT", description: "I translate mobility and safety studies into walkable, legible and place-based urban interventions." },
+  { id: "township", label: "Township Masterplanning", kicker: "TOWNSHIP MASTERPLANNING", description: "I balance accessibility, community interaction and residential privacy through integrated township planning." },
+  { id: "public-realm", label: "Public Realm", kicker: "PUBLIC REALM", description: "I create human-scale urban interventions that strengthen edges, streets, pedestrian movement and civic life." }
 ];
 
 const projects = [
@@ -22,7 +22,7 @@ const projects = [
     year: "2024—25",
     tags: "Master Planning · Infrastructure · Tender",
     image: "assets/images/iim-mumbai.svg",
-    description: "Redevelopment framework for a 65-acre institutional campus, integrating master planning, road infrastructure, utility coordination and implementation documentation.",
+    description: "I developed a redevelopment framework for a 65-acre institutional campus, integrating master planning, road infrastructure, utility coordination and implementation documentation.",
     role: "Urban Design · Master Planning · MEP Coordination · EPC Tender Documentation",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -34,7 +34,7 @@ const projects = [
     year: "2024—25",
     tags: "Urban Design · Campus Strategy",
     image: "assets/images/iit-dhanbad.svg",
-    description: "A brownfield campus framework translating land use, zoning, movement networks and public-realm principles into a coherent development strategy.",
+    description: "I developed a brownfield campus framework translating land use, zoning, movement networks and public-realm principles into a coherent development strategy.",
     role: "Urban Design · Guidelines · Campus Development Strategy",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -46,7 +46,7 @@ const projects = [
     year: "2024—25",
     tags: "Master Planning · Accessibility · Sports",
     image: "assets/images/bengaluru-sports-city.svg",
-    description: "A masterplan and conceptual framework for an inclusive sports city centred on Paralympic sports, training and accessible recreation.",
+    description: "I developed a masterplan and conceptual framework for an inclusive sports city centred on Paralympic sports, training and accessible recreation.",
     role: "Master Planning · Concept Design · Accessible Public Realm",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -58,7 +58,7 @@ const projects = [
     year: "2024—25",
     tags: "Infrastructure · DPR · Community",
     image: "assets/images/goa-fisheries.svg",
-    description: "A multi-site infrastructure programme addressing fishing-community needs through net-mending sheds, ramps, jetties, dredging and supporting amenities.",
+    description: "I worked across a multi-site infrastructure programme addressing fishing-community needs through net-mending sheds, ramps, jetties, dredging and supporting amenities.",
     role: "DPR Preparation · Infrastructure Planning · Community Amenities",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -70,7 +70,7 @@ const projects = [
     year: "2024—25",
     tags: "Transport · PPP · Feasibility",
     image: "assets/images/msrtc.svg",
-    description: "Master planning and feasibility studies for bus stations and depots across Maharashtra, explored through a PPP development model.",
+    description: "I worked on master planning and feasibility studies for bus stations and depots across Maharashtra under a PPP development model.",
     role: "Master Planning · Market Studies · FSI Feasibility",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -82,7 +82,7 @@ const projects = [
     year: "2023",
     tags: "TOD · Mobility · Safety · Placemaking",
     image: "assets/images/lamp-safety-audit.svg",
-    description: "Assessment of Local Area Mobility Parameters and safety conditions around two proposed TOD zones, using survey data to shape placemaking and mobility interventions.",
+    description: "I assessed Local Area Mobility Parameters and safety conditions around two proposed TOD zones, using survey data to shape placemaking and mobility interventions.",
     role: "Mobility Analysis · Safety Audit · Placemaking · Urban Design",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -94,7 +94,7 @@ const projects = [
     year: "Academic",
     tags: "Township · Community · Residential",
     image: "assets/images/blend-in.svg",
-    description: "An integrated township framework balancing public accessibility, community interaction and residential privacy through inclusive urban design strategies.",
+    description: "I developed an integrated township framework balancing public accessibility, community interaction and residential privacy through inclusive urban design strategies.",
     role: "Township Planning · Urban Design · Spatial Strategy",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -106,7 +106,7 @@ const projects = [
     year: "Academic",
     tags: "Urban Design · Public Realm · Placemaking",
     image: "assets/images/infusing-edges.svg",
-    description: "Reimagining institutional edges as inclusive public spaces by connecting campuses with surrounding urban villages through spatial design and activity programming.",
+    description: "I reimagined institutional edges as inclusive public spaces by connecting campuses with surrounding urban villages through spatial design and activity programming.",
     role: "Urban Design · Public Realm · Activity Programming",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   },
@@ -118,7 +118,7 @@ const projects = [
     year: "Academic",
     tags: "Mobility · Public Realm · Street Design",
     image: "assets/images/shivranjani.svg",
-    description: "An urban design proposal focused on pedestrian mobility, public-realm quality and street character at a key Ahmedabad intersection.",
+    description: "I developed an urban design proposal focused on pedestrian mobility, public-realm quality and street character at a key Ahmedabad intersection.",
     role: "Street Design · Mobility · Public Realm",
     driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
   }
@@ -130,31 +130,31 @@ const experiences = [
     date: "May 2026 — Present",
     org: "INI Design Studio",
     role: "Urban Designer",
-    note: "Godrej Properties, Nagpur · plot cut sheets and planning documentation; TIFR Hyderabad · boulevard paving patterns and streetscape character."
+    note: "At Godrej Properties, Nagpur, I prepared plot cut sheets and planning documentation; at TIFR Hyderabad, I designed boulevard paving patterns contributing to streetscape character."
   },
   {
     date: "Jul 2024 — Oct 2025",
     org: "Shashi Prabhu & Associates",
     role: "Urban Designer",
-    note: "Institutional campuses, sports city, fisheries infrastructure, MSRTC transport sites and additional bid / concept design work."
+    note: "I worked across institutional campuses, a sports city, fisheries infrastructure, MSRTC transport sites and additional bid / concept design work."
   },
   {
     date: "May 2023 — Jul 2023",
     org: "Directorate of Urban Land Transport",
     role: "Planner Intern",
-    note: "LAMP and safety audit around proposed TOD zones; survey analysis, placemaking and mobility solutions."
+    note: "I worked on LAMP and safety audits around proposed TOD zones, analysing survey data and developing placemaking and mobility solutions."
   },
   {
     date: "Nov 2021 — Jun 2025",
     org: "Studio Nirmaanam",
     role: "Independent Practice",
-    note: "Led end-to-end design and project management for two 2BHK residences and a 1,000 sq. ft office, including team and site execution."
+    note: "I led end-to-end design and project management for two 2BHK residences and a 1,000 sq. ft office, including team coordination and site execution."
   },
   {
     date: "May 2020 — Oct 2021",
     org: "Rathin Goghari Architects · Rudiments Architects",
     role: "Architectural Experience",
-    note: "Detailed architectural and interior drawings, design development, detailing and site execution across residential, institutional, retail and healthcare projects."
+    note: "I developed detailed architectural and interior drawings and supported design development, detailing and site execution across residential, institutional, retail and healthcare projects."
   }
 ];
 
@@ -205,7 +205,7 @@ workThemes.forEach((theme) => {
         <h3>${project.name}</h3>
         <p class="project-type">${project.subtitle}</p>
         <p class="project-desc">${project.description}</p>
-        <div class="project-role"><small>Her role</small><div>${project.role}</div></div>
+        <div class="project-role"><small>My role</small><div>${project.role}</div></div>
         ${cta}
       </div>
     `;
