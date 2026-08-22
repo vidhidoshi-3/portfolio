@@ -34,7 +34,7 @@ const projects = [
     subtitle: "200-acre Brownfield Campus",
     year: "2024—25",
     tags: "Urban Design · Campus Strategy",
-    image: "assets/images/iit-dhanbad.svg",
+    image: "assets/images/iit-dhanbad.jpg",
     description: "A brownfield campus framework translating land use, zoning, movement networks and public-realm principles into a coherent development strategy.",
     role: "Urban Design · Guidelines · Campus Development Strategy",
     driveUrl: "https://drive.google.com/file/d/1O-zC4xrhoCx0OcMSRRNuwRYkcuvTqwU4/view",
