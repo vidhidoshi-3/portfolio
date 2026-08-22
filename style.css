@@ -71,6 +71,12 @@ a { color: inherit; }
 .nav a.is-active::after { transform:scaleX(1); }
 .header-cv { justify-self: end; font-size: .78rem; border-bottom: 1px solid var(--ink); padding-bottom: 4px; }
 .hero { padding-top: 78px; padding-bottom: 46px; }
+.hero-name {
+  margin: 0 0 0px;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
 .hero-kicker { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: .72rem; text-transform: uppercase; letter-spacing: .13em; }
 .hero-kicker i { width: 34px; height: 1px; background: var(--line); }
 .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: end; padding: 58px 0 72px; }
