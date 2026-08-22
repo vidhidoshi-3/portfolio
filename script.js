@@ -89,7 +89,7 @@ const projects = [
     image: "assets/images/lamp-safety-audit.svg",
     description: "Assessment of Local Area Mobility Parameters and safety conditions around two proposed TOD zones, using survey data to shape placemaking and mobility interventions.",
     role: "Mobility Analysis · Safety Audit · Placemaking · Urban Design",
-    driveUrl: "https://dult.karnataka.gov.in/uploads/media_to_upload1700045388.pdf",
+    driveUrl: "https://drive.google.com/drive/folders/1mPhn4nCrZdKhKIZn-UI6ORdkcJbyxeen?usp=drive_link",
     videoUrl: "https://dult.karnataka.gov.in/uploads/media_to_upload1700045435.pdf"
   },
   {
