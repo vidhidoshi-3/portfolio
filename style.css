@@ -125,9 +125,35 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-style: italic; font-
 .project-role { margin-top:28px; padding-top:14px; border-top:1px solid var(--line); }
 .project-role small { display:block; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-size:.62rem; margin-bottom:8px; }
 .project-role div { font-size:.86rem; }
-.project-link { display:inline-flex; align-items:center; gap:7px; text-decoration:none; border-bottom:1px solid var(--ink);padding-bottom:5px; font-size:.78rem; }
-.watch-icon { width:14px; height:14px; fill:currentColor; flex:0 0 auto; }
-.project-video-link { margin-left:50px; text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:5px; font-size:.78rem; }
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 5px;
+  font-size: .78rem;
+}
+
+.project-video-link {
+  margin-left: 0;
+}
+
+.watch-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
 .about-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap:80px; padding-bottom: 12px; }
 .about-statement p { font-size:clamp(1.3rem, 2vw, 1.85rem); line-height:1.46; margin:0 0 22px; letter-spacing:-.02em; }
 .skills { border-top:1px solid var(--line); padding-top:12px; }
@@ -290,19 +316,64 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-style: italic; font-
 
 @media (max-width: 900px) {
   .theme-section-head {
-    grid-template-columns: 48px minmax(0, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .theme-section-marker {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .theme-section-marker span {
+    max-width: 120px;
+  }
+
+  .theme-section-title {
+    max-width: 100%;
+    font-size: clamp(2.8rem, 8vw, 5rem);
+    line-height: .92;
+    overflow-wrap: break-word;
+  }
+
+  .theme-section-description {
+    max-width: 720px;
   }
 }
 
 @media (max-width: 600px) {
   .theme-section-head {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 18px;
     margin-bottom: 44px;
     padding: 22px 0 28px;
   }
-  .theme-section-topline { align-items: flex-start; }
-  .theme-section-title { font-size: clamp(2.6rem, 13vw, 4.2rem); }
-  .theme-section-description { font-size: .86rem; margin-top: 14px; }
+
+  .theme-section-topline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .theme-section-title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    line-height: .94;
+    letter-spacing: -.05em;
+    overflow-wrap: anywhere;
+  }
+
+  .theme-section-description {
+    font-size: .86rem;
+    line-height: 1.6;
+    margin-top: 14px;
+  }
+
+  .theme-section-marker {
+    justify-content: flex-start;
+  }
+
+  .theme-section-marker span {
+    width: 72px;
+  }
 }
