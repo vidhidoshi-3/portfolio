@@ -126,6 +126,9 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-style: italic; font-
 .project-role small { display:block; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-size:.62rem; margin-bottom:8px; }
 .project-role div { font-size:.86rem; }
 .project-link { align-self:flex-start; margin-top:34px; text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:5px; font-size:.78rem; }
+.watch-icon { width:14px; height:14px; fill:currentColor; flex:0 0 auto; }
+.project-video-link { border-bottom-color: transparent; }
+.project-video-link:hover { border-bottom-color: var(--ink); }
 .about-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap:80px; padding-bottom: 12px; }
 .about-statement p { font-size:clamp(1.3rem, 2vw, 1.85rem); line-height:1.46; margin:0 0 22px; letter-spacing:-.02em; }
 .skills { border-top:1px solid var(--line); padding-top:12px; }
