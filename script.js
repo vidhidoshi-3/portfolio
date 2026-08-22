@@ -203,8 +203,8 @@ workThemes.forEach((theme) => {
     const validVideoUrl = safeUrl(project.videoUrl);
 
     const deckLink = validDriveUrl
-      ? `<a class="project-link" href="${validDriveUrl}" target="_blank" rel="noopener noreferrer">Open project deck ↗</a>`
-      : `<a class="project-link placeholder-link" href="#" data-project="${project.name}">Add project deck ↗</a>`;
+      ? `<a class="project-link" href="${validDriveUrl}" target="_blank" rel="noopener noreferrer">View Project ↗</a>`
+      : "";
 
     const videoLink = validVideoUrl
       ? `<a class="project-link project-video-link" href="${validVideoUrl}" target="_blank" rel="noopener noreferrer" aria-label="Watch project video">
