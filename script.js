@@ -24,7 +24,7 @@ const projects = [
     image: "assets/images/iim-mumbai.svg",
     description: "Redevelopment framework for a 65-acre institutional campus, integrating master planning, road infrastructure, utility coordination and implementation documentation.",
     role: "Urban Design · Master Planning · MEP Coordination · EPC Tender Documentation",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/file/d/1TkFvypcIOYl5uz-9l4VMo03m6ugkix2t/view",
     videoUrl: ""
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     image: "assets/images/iit-dhanbad.svg",
     description: "A brownfield campus framework translating land use, zoning, movement networks and public-realm principles into a coherent development strategy.",
     role: "Urban Design · Guidelines · Campus Development Strategy",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/file/d/1O-zC4xrhoCx0OcMSRRNuwRYkcuvTqwU4/view",
     videoUrl: ""
   },
   {
@@ -50,8 +50,8 @@ const projects = [
     image: "assets/images/bengaluru-sports-city.svg",
     description: "A masterplan and conceptual framework for an inclusive sports city centred on Paralympic sports, training and accessible recreation.",
     role: "Master Planning · Concept Design · Accessible Public Realm",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
-    videoUrl: ""
+    driveUrl: "https://drive.google.com/file/d/1jG1UvjPEU2aEIjb8W6olXcc2pun7yITa/view?usp=drive_link",
+    videoUrl: "https://drive.google.com/file/d/1-je8sf6b_Al1dt0-4VfvV4_UwSL8py8r/view?usp=drive_link"
   },
   {
     theme: "community",
@@ -63,7 +63,7 @@ const projects = [
     image: "assets/images/goa-fisheries.svg",
     description: "A multi-site infrastructure programme addressing fishing-community needs through net-mending sheds, ramps, jetties, dredging and supporting amenities.",
     role: "DPR Preparation · Infrastructure Planning · Community Amenities",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/drive/folders/1c4klfRtpPfqoQJgSS0A3ypL3vWV4fVK2?usp=drive_link",
     videoUrl: ""
   },
   {
@@ -76,7 +76,7 @@ const projects = [
     image: "assets/images/msrtc.svg",
     description: "Master planning and feasibility studies for bus stations and depots across Maharashtra, explored through a PPP development model.",
     role: "Master Planning · Market Studies · FSI Feasibility",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/file/d/1Jt-2AoHu3BLkY2UOk8Ou0n0Vs4Y1qK6C/view",
     videoUrl: ""
   },
   {
@@ -89,8 +89,8 @@ const projects = [
     image: "assets/images/lamp-safety-audit.svg",
     description: "Assessment of Local Area Mobility Parameters and safety conditions around two proposed TOD zones, using survey data to shape placemaking and mobility interventions.",
     role: "Mobility Analysis · Safety Audit · Placemaking · Urban Design",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
-    videoUrl: ""
+    driveUrl: "https://dult.karnataka.gov.in/uploads/media_to_upload1700045388.pdf",
+    videoUrl: "https://dult.karnataka.gov.in/uploads/media_to_upload1700045435.pdf"
   },
   {
     theme: "township",
@@ -102,7 +102,7 @@ const projects = [
     image: "assets/images/blend-in.svg",
     description: "An integrated township framework balancing public accessibility, community interaction and residential privacy through inclusive urban design strategies.",
     role: "Township Planning · Urban Design · Spatial Strategy",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/file/d/1xH7GQc_s5175sRCyK1kzLiOAEGDrRZhr/view",
     videoUrl: ""
   },
   {
@@ -115,7 +115,7 @@ const projects = [
     image: "assets/images/infusing-edges.svg",
     description: "Reimagining institutional edges as inclusive public spaces by connecting campuses with surrounding urban villages through spatial design and activity programming.",
     role: "Urban Design · Public Realm · Activity Programming",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/file/d/1vnESsVxwcpsDettLw7kJBOOW8s1T3aYC/view",
     videoUrl: ""
   },
   {
@@ -128,7 +128,7 @@ const projects = [
     image: "assets/images/shivranjani.svg",
     description: "An urban design proposal focused on pedestrian mobility, public-realm quality and street character at a key Ahmedabad intersection.",
     role: "Street Design · Mobility · Public Realm",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE",
+    driveUrl: "https://drive.google.com/file/d/1NK0zdYTBgimdw9bUMZpwBVgL9bQ6WTgf/view",
     videoUrl: ""
   }
 ];
