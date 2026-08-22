@@ -21,7 +21,7 @@ const projects = [
     subtitle: "65-acre Campus Redevelopment",
     year: "2024—25",
     tags: "Master Planning · Infrastructure · Tender",
-    image: "assets/images/iim-mumbai.svg",
+    image: "assets/images/iim-mumbai.jpg",
     description: "Redevelopment framework for a 65-acre institutional campus, integrating master planning, road infrastructure, utility coordination and implementation documentation.",
     role: "Urban Design · Master Planning · MEP Coordination · EPC Tender Documentation",
     driveUrl: "https://drive.google.com/file/d/1TkFvypcIOYl5uz-9l4VMo03m6ugkix2t/view",
