@@ -125,7 +125,7 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-style: italic; font-
 .project-role { margin-top:28px; padding-top:14px; border-top:1px solid var(--line); }
 .project-role small { display:block; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-size:.62rem; margin-bottom:8px; }
 .project-role div { font-size:.86rem; }
-.project-link { align-self:flex-start; margin-top:34px; text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:5px; font-size:.78rem; }
+.project-link { display:inline-flex; align-items:center; gap:7px; text-decoration:none; border-bottom:1px solid var(--ink);padding-bottom:5px; font-size:.78rem; }
 .watch-icon { width:14px; height:14px; fill:currentColor; flex:0 0 auto; }
 .project-video-link { margin-left:50px; text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:5px; font-size:.78rem; }
 .about-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap:80px; padding-bottom: 12px; }
