@@ -24,7 +24,7 @@ const projects = [
     image: "assets/images/iim-mumbai.svg",
     description: "I developed a redevelopment framework for a 65-acre institutional campus, integrating master planning, road infrastructure, utility coordination and implementation documentation.",
     role: "Urban Design · Master Planning · MEP Coordination · EPC Tender Documentation",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
+    driveUrl: "https://drive.google.com/file/d/1TkFvypcIOYl5uz-9l4VMo03m6ugkix2t/view"
   },
   {
     theme: "educational",
@@ -36,7 +36,7 @@ const projects = [
     image: "assets/images/iit-dhanbad.svg",
     description: "I developed a brownfield campus framework translating land use, zoning, movement networks and public-realm principles into a coherent development strategy.",
     role: "Urban Design · Guidelines · Campus Development Strategy",
-    driveUrl: "PASTE_GOOGLE_DRIVE_LINK_HERE"
+    driveUrl: "https://drive.google.com/file/d/1O-zC4xrhoCx0OcMSRRNuwRYkcuvTqwU4/view"
   },
   {
     theme: "sports",
