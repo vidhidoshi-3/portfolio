@@ -184,7 +184,6 @@ workThemes.forEach((theme) => {
     <div class="theme-section-head">
       <div class="theme-section-copy">
         <div class="theme-section-topline">
-          <p class="theme-label">${theme.kicker}</p>
         </div>
         <h3 class="theme-section-title">${theme.label}</h3>
         <p class="theme-section-description">${theme.description}</p>
