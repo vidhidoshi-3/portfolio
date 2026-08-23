@@ -137,7 +137,7 @@ const projects = [
     subtitle: "Urban Intersection  ·  Ahmedabad",
     year: "Academic",
     tags: "Mobility · Public Realm · Street Design",
-    image: "assets/images/shivranjani.png",
+    image: "assets/images/shivranjani.jpeg",
     description: "Reimagined Shivranjani Cross Road as a more pedestrian-oriented urban intersection. The proposal focused on improving pedestrian movement, public-realm quality and the overall character of the street environment.",
     role: "Intersection Design · Pedestrian Mobility · Public Realm · Streetscape Design · Placemaking",
     driveUrl: "https://drive.google.com/file/d/1NK0zdYTBgimdw9bUMZpwBVgL9bQ6WTgf/view",
