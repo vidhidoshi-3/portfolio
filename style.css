@@ -238,9 +238,25 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-style: italic; font-
   .section-head { grid-template-columns:40px 1fr; margin-bottom:42px; }
   .work, .about, .experience { padding-top:85px; }
   .project-groups { gap:88px; }
-  .work-themes { position:static; overflow-x:auto; flex-wrap:nowrap; margin-bottom:58px; padding-bottom:14px; scrollbar-width:none; }
-  .work-themes::-webkit-scrollbar { display:none; }
-  .work-theme { flex:none; }
+  .work-themes {
+    position: sticky;
+    top: 104px;
+    z-index: 40;
+  
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  
+    margin-bottom: 58px;
+    padding: 14px 0;
+  
+    scrollbar-width: none;
+  
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(12px);
+  
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
   .project-theme-section { scroll-margin-top:30px; }
   .project-theme-section .project-list { gap:80px; }
   .project-body h3 { margin-top:32px; }
