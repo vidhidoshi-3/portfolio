@@ -401,7 +401,10 @@ updateWorkTheme();
 
 workThemeLinks.forEach(link => {
   link.addEventListener("click", () => {
-    activateWorkTheme(link.getAttribute("href").replace("#theme-", ""));
+    activateWorkTheme(
+      link.getAttribute("href").replace("#theme-", ""),
+      false
+    );
   });
 });
 
