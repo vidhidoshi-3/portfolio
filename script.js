@@ -199,7 +199,6 @@ workThemes.forEach((theme) => {
         <h3 class="theme-section-title">${theme.label}</h3>
         <p class="theme-section-description">${theme.description}</p>
       </div>
-      <div class="theme-section-marker" aria-hidden="true"><span></span></div>
     </div>
     <div class="project-list"></div>
   `;
