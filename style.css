@@ -435,34 +435,33 @@ h2 em {
 .project-theme-section .project-list {
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 24px;
 }
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(360px, .72fr);
-  gap: 40px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1.08fr) minmax(380px, .92fr);
+  min-height: 390px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 72%, transparent);
+  box-shadow: 0 12px 30px rgba(50, 45, 35, .045);
 }
 
-/* Dedicated visual panel: every project image stays contained inside this box. */
 .project-visual {
   position: relative;
-  display: block;
+  min-width: 0;
   width: 100%;
   aspect-ratio: 16 / 10;
-  min-height: 0;
-
-  border: 1px solid var(--line);
-  padding: 0;
+  align-self: stretch;
+  border: 0;
+  border-right: 1px solid var(--line);
+  padding: 20px;
   font: inherit;
   color: inherit;
   cursor: zoom-in;
   text-align: left;
   overflow: hidden;
   background: var(--paper);
-
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .04);
 }
 
 .project-visual img {
@@ -471,6 +470,9 @@ h2 em {
   object-fit: cover;
   object-position: center;
   display: block;
+  border: 1px solid var(--line);
+  filter: saturate(.88);
+  transition: transform .7s cubic-bezier(.2,.65,.25,1), filter .35s;
 }
 
 :root[data-theme="dark"] .project-visual img {
@@ -478,7 +480,7 @@ h2 em {
 }
 
 .project-card:hover .project-visual img {
-  transform: scale(1.025);
+  transform: scale(1.018);
   filter: saturate(1);
 }
 
@@ -487,26 +489,24 @@ h2 em {
 }
 
 .project-number {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  font-size: .72rem;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  padding: 6px 9px;
+  display: none;
 }
 
 .project-body {
   min-width: 0;
-  padding: 34px 34px 36px;
-
+  padding: 36px 42px 38px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  border: 1px solid var(--line);
   background: var(--paper);
+}
 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, .025);
+.project-index {
+  margin-bottom: 18px;
+  color: var(--accent);
+  font-size: .62rem;
+  line-height: 1;
+  letter-spacing: .13em;
 }
 
 .project-meta {
@@ -521,9 +521,9 @@ h2 em {
 }
 
 .project-body h3 {
-  font-size: clamp(2.9rem, 6vw, 6.5rem);
-  line-height: .84;
-  margin-top: 44px;
+  font-size: clamp(2.4rem, 4vw, 4.6rem);
+  line-height: .9;
+  margin: 32px 0 0;
 }
 
 .project-type {
@@ -601,9 +601,12 @@ h2 em {
   letter-spacing: -.02em;
 }
 
+/* Right column starts alongside the About heading, not below it. */
 .skills {
-  border-top: 1px solid var(--line);
-  padding-top: 12px;
+  border-top: 0;
+  border-left: 1px solid var(--line);
+  padding: 0 0 0 36px;
+  margin-top: -56px;
 }
 
 .skill-label {
@@ -614,15 +617,56 @@ h2 em {
   margin-bottom: 22px;
 }
 
+.education-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 24px;
+}
+
+.education-card strong {
+  font-size: .88rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.education-card span {
+  color: var(--muted);
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.education-card small {
+  color: var(--muted);
+  font-size: .65rem;
+  line-height: 1.4;
+}
+
+.skills-divider {
+  width: 100%;
+  height: 1px;
+  margin: 4px 0 28px;
+  background: var(--line);
+}
+
+/* Capabilities are individual pill tags, not a table. */
 .skill-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .skill-grid span {
-  padding: 11px 0;
-  border-bottom: 1px solid var(--line);
-  font-size: .84rem;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: .65rem;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .timeline {
@@ -877,12 +921,13 @@ h2 em {
 
   .project-card {
     grid-template-columns: 1fr;
-    gap: 24px;
   }
 
   .project-visual {
     min-height: auto;
     aspect-ratio: 16 / 10;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
   }
 
   .project-body {
@@ -1126,5 +1171,25 @@ h2 em {
 
   .theme-section-marker span {
     width: 72px;
+  }
+}
+
+
+/* About responsive refinement */
+@media (max-width: 900px) {
+  .skills {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 28px 0 0;
+    margin-top: 0;
+  }
+
+  .skill-grid {
+    gap: 7px;
+  }
+
+  .skill-grid span {
+    padding: 7px 9px;
+    font-size: .62rem;
   }
 }
