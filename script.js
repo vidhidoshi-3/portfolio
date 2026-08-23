@@ -304,49 +304,45 @@ primaryNavLinks.forEach(link => {
 const workThemeLinks = [...document.querySelectorAll(".work-theme")];
 const workThemeSections = [...document.querySelectorAll(".project-theme-section")];
 
-function activateWorkTheme(id, autoScroll = true) {
-  let activeLink = null;
+function activateWorkTheme(id, keepVisible = true) {
+  const activeLink = workThemeLinks.find(
+    link => link.getAttribute("href") === `#theme-${id}`
+  );
 
   workThemeLinks.forEach(link => {
-    const isActive =
-      link.getAttribute("href") === `#theme-${id}`;
-
-    link.classList.toggle("is-active", isActive);
-
-    if (isActive) {
-      activeLink = link;
-    }
+    link.classList.toggle(
+      "is-active",
+      link === activeLink
+    );
   });
 
-  if (!activeLink || !autoScroll) return;
+  if (!activeLink || !keepVisible) return;
 
-  const themeBar = document.querySelector(".work-themes");
+  const themeBar = document.getElementById("work-themes");
 
-  // Only auto-scroll when the theme bar itself is horizontally scrollable.
   if (!themeBar) return;
 
-  const isMobile =
-    window.matchMedia("(max-width: 900px)").matches;
-
-  if (!isMobile) return;
+  // Only do horizontal scrolling on mobile/tablet.
+  if (window.innerWidth > 900) return;
 
   const barRect = themeBar.getBoundingClientRect();
   const linkRect = activeLink.getBoundingClientRect();
 
-  const leftPadding = 16;
-  const rightPadding = 16;
+  const leftEdge = barRect.left + 16;
+  const rightEdge = barRect.right - 16;
 
-  const linkOutsideLeft =
-    linkRect.left < barRect.left + leftPadding;
+  let targetLeft = themeBar.scrollLeft;
 
-  const linkOutsideRight =
-    linkRect.right > barRect.right - rightPadding;
+  if (linkRect.left < leftEdge) {
+    targetLeft += linkRect.left - leftEdge;
+  } else if (linkRect.right > rightEdge) {
+    targetLeft += linkRect.right - rightEdge;
+  }
 
-  if (linkOutsideLeft || linkOutsideRight) {
-    activeLink.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center"
+  if (targetLeft !== themeBar.scrollLeft) {
+    themeBar.scrollTo({
+      left: targetLeft,
+      behavior: "smooth"
     });
   }
 }
