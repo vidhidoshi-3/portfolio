@@ -225,7 +225,7 @@ workThemes.forEach((theme) => {
         <h3>${project.name}</h3>
         <p class="project-type">${project.subtitle}</p>
         <p class="project-desc">${project.description}</p>
-        <div class="project-role"><small>Her role</small><div>${project.role}</div></div>
+        <div class="project-role"><small>My role</small><div>${project.role}</div></div>
         ${cta}
       </div>
     `;
