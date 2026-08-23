@@ -150,31 +150,31 @@ const experiences = [
   {
     date: "May 2026 — Present",
     org: "INI Design Studio",
-    role: "Urban Designer",
+    role: "Urban Designer · Bengaluru/Ahmebadad",
     note: "Plotting documentation, Boulevard design, Campus Masterplan conceptualisation"
   },
   {
     date: "Jul 2024 — Oct 2025",
     org: "Shashi Prabhu & Associates",
-    role: "Urban Designer",
+    role: "Urban Designer · Mumbai",
     note: "Institutional campuses, sports city, fisheries infrastructure, MSRTC transport sites and additional bid / concept design work."
   },
   {
     date: "May 2023 — Jul 2023",
     org: "Directorate of Urban Land Transport",
-    role: "Planner Intern",
+    role: "Planner Intern · Bengaluru",
     note: "LAMP and safety audit around proposed TOD zones; survey analysis, placemaking and mobility solutions."
   },
   {
     date: "Nov 2021 — Jun 2025",
     org: "Studio Nirmaanam",
-    role: "Independent Practice",
+    role: "Independent Practice · Akola",
     note: "Led end-to-end design and project management for two 2BHK residences and a 1,000 sq. ft office, including team and site execution."
   },
   {
     date: "May 2020 — Oct 2021",
     org: "Rathin Goghari Architects · Rudiments Architects",
-    role: "Architectural Experience",
+    role: "Architectural Experience · Ahmedabad",
     note: "Detailed architectural and interior drawings, design development, detailing and site execution across residential, institutional, retail and healthcare projects."
   }
 ];
@@ -450,8 +450,7 @@ experiences.forEach(item => {
   const row = document.createElement("div");
   row.className = "timeline-item";
   row.innerHTML = `
-    <div class="timeline-date">${item.date}</div>
-    <div><div class="timeline-org">${item.org}</div><div class="timeline-role">${item.role}</div></div>
+    <div><div class="timeline-org">${item.org}</div><div class="timeline-role">${item.role}</div><div class="timeline-date">${item.date}</div></div>
     <div class="timeline-note">${item.note}</div>
   `;
   experienceList.appendChild(row);
