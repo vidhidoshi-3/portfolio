@@ -151,7 +151,7 @@ const experiences = [
     date: "May 2026 — Present",
     org: "INI Design Studio",
     role: "Urban Designer",
-    note: "Godrej Properties, Nagpur · plot cut sheets and planning documentation; TIFR Hyderabad · boulevard paving patterns and streetscape character."
+    note: "Plotting documentation, Boulevard design, Campus Masterplan conceptualisation"
   },
   {
     date: "Jul 2024 — Oct 2025",
