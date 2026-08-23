@@ -595,7 +595,7 @@ h2 em {
 }
 
 .about-statement p {
-  font-size: clamp(1.3rem, 2vw, 1.85rem);
+  font-size: clamp(1.3rem, 1.8vw, 1.6rem);
   line-height: 1.46;
   margin: 0 0 22px;
   letter-spacing: -.02em;
