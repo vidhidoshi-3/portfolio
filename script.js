@@ -260,11 +260,23 @@ function activatePrimaryNav(id) {
 function updatePrimaryNav() {
   if (!primaryNavSections.length) return;
 
-  const probeY = window.scrollY + Math.min(140, window.innerHeight * 0.22);
+  const header = document.querySelector(".site-header");
+  const headerHeight = header
+    ? header.getBoundingClientRect().height
+    : 0;
+
+  const probeY =
+    headerHeight +
+    Math.min(100, window.innerHeight * 0.18);
+
   let activeId = primaryNavSections[0].id;
 
   for (const section of primaryNavSections) {
-    if (section.offsetTop <= probeY) activeId = section.id;
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= probeY) {
+      activeId = section.id;
+    }
   }
 
   activatePrimaryNav(activeId);
@@ -298,13 +310,53 @@ function activateWorkTheme(id) {
   });
 }
 
-if (workThemeSections.length && "IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((entries) => {
-    const visible = entries.filter(entry => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-    if (visible[0]) activateWorkTheme(visible[0].target.dataset.themeId);
-  }, { rootMargin: "-18% 0px -55% 0px", threshold: [0.1, 0.35, 0.6] });
-  workThemeSections.forEach(section => observer.observe(section));
+function updateWorkTheme() {
+  if (!workThemeSections.length) return;
+
+  const header = document.querySelector(".site-header");
+  const themeBar = document.querySelector(".work-themes");
+
+  const headerHeight = header
+    ? header.getBoundingClientRect().height
+    : 0;
+
+  const themeBarHeight = themeBar
+    ? themeBar.getBoundingClientRect().height
+    : 0;
+
+  const probeY =
+    headerHeight +
+    themeBarHeight +
+    Math.min(120, window.innerHeight * 0.18);
+
+  let activeSection = workThemeSections[0];
+
+  for (const section of workThemeSections) {
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top <= probeY) {
+      activeSection = section;
+    }
+  }
+
+  activateWorkTheme(activeSection.dataset.themeId);
 }
+
+let workThemeRaf = null;
+
+window.addEventListener("scroll", () => {
+  if (workThemeRaf) return;
+
+  workThemeRaf = requestAnimationFrame(() => {
+    updateWorkTheme();
+    workThemeRaf = null;
+  });
+}, { passive: true });
+
+window.addEventListener("resize", updateWorkTheme);
+window.addEventListener("load", updateWorkTheme);
+
+updateWorkTheme();
 
 workThemeLinks.forEach(link => {
   link.addEventListener("click", () => {
