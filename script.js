@@ -34,7 +34,7 @@ const projects = [
     year: "2024—25",
     tags: "Master Planning · Infrastructure · Tender",
     image: "assets/images/iim-mumbai.jpg",
-    description: "Redevelopment framework of a 65-acre institutional campus, integrating new academic and residential infrastructure within an existing campus framework. The masterplan had to balance spatial planning with road infrastructure, utility coordination, statutory requirements and phased implementation",
+    description: "Redevelopment framework of a 65-acre institutional campus, integrating new academic and residential infrastructure within an existing campus framework. The masterplan had to balance spatial planning with road infrastructure, utility coordination, statutory requirements and phased implementation.",
     role: "Master Planning · MEP Infrastructure Coordination · EPC Tender Documentation · Municipal Approvals",
     driveUrl: "https://drive.google.com/file/d/1TkFvypcIOYl5uz-9l4VMo03m6ugkix2t/view",
     videoUrl: ""
@@ -108,12 +108,12 @@ const projects = [
     theme: "township",
     number: "07",
     name: "BLEND.in",
-    subtitle: "Integrated Township  ·  Gandhinagar",
+    subtitle: "300-acre Integrated Township · Gandhinagar",
     year: "Academic",
     tags: "Township · Community · Residential",
     image: "assets/images/blend-in.jpg",
-    description: "An integrated township framework balancing public accessibility, community interaction and residential privacy through inclusive urban design strategies.",
-    role: "Township Planning · Urban Design · Spatial Strategy",
+    description: "An integrated township framework that balances public accessibility with community interaction and residential privacy. The project examined how different degrees of publicness can be structured through spatial hierarchy and urban design.",
+    role: "Township Planning · Spatial Framework · Public-Private Interface · Community Planning ",
     driveUrl: "https://drive.google.com/file/d/1xH7GQc_s5175sRCyK1kzLiOAEGDrRZhr/view",
     videoUrl: ""
   },
@@ -125,8 +125,8 @@ const projects = [
     year: "Academic",
     tags: "Urban Design · Public Realm · Placemaking",
     image: "assets/images/infusing-edges.png",
-    description: "Reimagining institutional edges as inclusive public spaces by connecting campuses with surrounding urban villages through spatial design and activity programming.",
-    role: "Urban Design · Public Realm · Activity Programming",
+    description: "Explored the potential of institutional edges as active and inclusive urban spaces rather than hard boundaries. It proposed stronger social connections between institutional campuses and surrounding urban villages through public space and activity programming.",
+    role: "Public Realm · Spatial Design · Activity Programming · Campus-Community Interface",
     driveUrl: "https://drive.google.com/file/d/1vnESsVxwcpsDettLw7kJBOOW8s1T3aYC/view",
     videoUrl: ""
   },
@@ -138,8 +138,8 @@ const projects = [
     year: "Academic",
     tags: "Mobility · Public Realm · Street Design",
     image: "assets/images/shivranjani.png",
-    description: "An urban design proposal focused on pedestrian mobility, public-realm quality and street character at a key Ahmedabad intersection.",
-    role: "Street Design · Mobility · Public Realm",
+    description: "Reimagined Shivranjani Cross Road as a more pedestrian-oriented urban intersection. The proposal focused on improving pedestrian movement, public-realm quality and the overall character of the street environment.",
+    role: "Intersection Design · Pedestrian Mobility · Public Realm · Streetscape Design · Placemaking",
     driveUrl: "https://drive.google.com/file/d/1NK0zdYTBgimdw9bUMZpwBVgL9bQ6WTgf/view",
     videoUrl: ""
   }
