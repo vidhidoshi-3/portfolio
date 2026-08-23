@@ -185,7 +185,6 @@ workThemes.forEach((theme) => {
       <div class="theme-section-copy">
         <div class="theme-section-topline">
           <p class="theme-label">${theme.kicker}</p>
-          <span class="theme-count">${projectCount} ${themeProjects.length === 1 ? "PROJECT" : "PROJECTS"}</span>
         </div>
         <h3 class="theme-section-title">${theme.label}</h3>
         <p class="theme-section-description">${theme.description}</p>
