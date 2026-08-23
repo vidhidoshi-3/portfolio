@@ -257,6 +257,9 @@ h1 em, h2 em { font-family: "Playfair Display", serif; font-style: italic; font-
     border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
   }
+  .work-theme {
+    touch-action: pan-x;
+  }
   .project-theme-section { scroll-margin-top:30px; }
   .project-theme-section .project-list { gap:80px; }
   .project-body h3 { margin-top:32px; }
