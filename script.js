@@ -180,7 +180,6 @@ workThemes.forEach((theme) => {
   section.id = `theme-${theme.id}`;
   section.dataset.themeId = theme.id;
   const themeProjects = projects.filter(project => project.theme === theme.id);
-  const projectCount = themeProjects.length.toString().padStart(2, "0");
   section.innerHTML = `
     <div class="theme-section-head">
       <div class="theme-section-copy">
