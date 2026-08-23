@@ -3,6 +3,7 @@
   Update the Google Drive URLs and image paths here.
   The HTML page will build the project cards automatically.
 */
+
 const workThemes = [
   { id: "educational", label: "Educational", kicker: "EDUCATIONAL", description: "Institutional campuses shaped through master planning, movement, infrastructure and long-term development strategy." },
   { id: "sports", label: "Sports", kicker: "SPORTS", description: "Inclusive sports environments balancing access, training, recreation and public-realm character." },
@@ -234,6 +235,7 @@ workThemes.forEach((theme) => {
   projectList.appendChild(section);
 });
 
+
 document.querySelectorAll('.placeholder-link').forEach(link => {
   link.addEventListener('click', (event) => {
     event.preventDefault();
@@ -300,13 +302,21 @@ primaryNavLinks.forEach(link => {
   });
 });
 
+
 const workThemeLinks = [...document.querySelectorAll(".work-theme")];
 const workThemeSections = [...document.querySelectorAll(".project-theme-section")];
+
+let activeWorkThemeId = null;
 
 function activateWorkTheme(id, keepVisible = true) {
   const activeLink = workThemeLinks.find(
     link => link.getAttribute("href") === `#theme-${id}`
   );
+
+  if (!activeLink) return;
+
+  const themeChanged = activeWorkThemeId !== id;
+  activeWorkThemeId = id;
 
   workThemeLinks.forEach(link => {
     link.classList.toggle(
@@ -315,7 +325,7 @@ function activateWorkTheme(id, keepVisible = true) {
     );
   });
 
-  if (!activeLink || !keepVisible) return;
+  if (!themeChanged || !keepVisible) return;
 
   const themeBar = document.getElementById("work-themes");
 
@@ -403,6 +413,7 @@ workThemeLinks.forEach(link => {
   });
 });
 
+
 const experienceList = document.getElementById("experience-list");
 experiences.forEach(item => {
   const row = document.createElement("div");
@@ -489,6 +500,7 @@ document.addEventListener("click", (event) => {
     if (image) openLightbox(image);
     return;
   }
+
   if (event.target.closest("[data-lightbox-close=\"true\"]") || event.target.closest("#lightbox-close")) {
     closeLightbox();
   }
