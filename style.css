@@ -440,14 +440,20 @@ h2 em {
 
 .project-card {
   display: grid;
-  grid-template-columns: 1.45fr .72fr;
-  gap: 70px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(360px, .72fr);
+  gap: 40px;
   align-items: stretch;
 }
 
+/* Dedicated visual panel: every project image stays contained inside this box. */
 .project-visual {
   position: relative;
-  border: 0;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+
+  border: 1px solid var(--line);
   padding: 0;
   font: inherit;
   color: inherit;
@@ -455,18 +461,16 @@ h2 em {
   text-align: left;
   overflow: hidden;
   background: var(--paper);
-  aspect-ratio: 16 / 10;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .04);
 }
 
 .project-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
-  filter: saturate(.84);
-  transition:
-    transform .7s cubic-bezier(.2,.65,.25,1),
-    filter .35s;
 }
 
 :root[data-theme="dark"] .project-visual img {
@@ -492,10 +496,17 @@ h2 em {
 }
 
 .project-body {
-  padding-top: 6px;
+  min-width: 0;
+  padding: 34px 34px 36px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  border: 1px solid var(--line);
+  background: var(--paper);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .025);
 }
 
 .project-meta {
@@ -866,12 +877,16 @@ h2 em {
 
   .project-card {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
   }
 
   .project-visual {
     min-height: auto;
     aspect-ratio: 16 / 10;
+  }
+
+  .project-body {
+    padding: 28px 24px 30px;
   }
 
   .timeline-item {
@@ -1113,4 +1128,3 @@ h2 em {
     width: 72px;
   }
 }
-
