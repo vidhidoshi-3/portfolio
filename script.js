@@ -1,3 +1,14 @@
+// Always open the portfolio at the top when there is no URL hash.
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+if (!window.location.hash) {
+  window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+  });
+}
+
 /*
   CONTENT CONFIG
   Update the Google Drive URLs and image paths here.
