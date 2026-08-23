@@ -397,6 +397,28 @@ function updateWorkTheme() {
   activateWorkTheme(activeSection.dataset.themeId);
 }
 
+function updateExperienceYears() {
+  const startDate = new Date(2020, 4, 1); //considering masters offset
+  const today = new Date();
+
+  let years = today.getFullYear() - startDate.getFullYear() - 2; // 2 for masters'
+
+  const monthDifference = today.getMonth() - startDate.getMonth();
+
+  if (monthDifference < 0) {
+    years--;
+  }
+
+  const experienceElement = document.getElementById("experience-years");
+
+  if (experienceElement) {
+    experienceElement.textContent = `${years}+ years`;
+  }
+}
+
+updateExperienceYears();
+
+
 let workThemeRaf = null;
 
 window.addEventListener("scroll", () => {
