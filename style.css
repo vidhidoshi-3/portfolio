@@ -612,33 +612,33 @@ h2 em {
 .skill-label {
   text-transform: uppercase;
   letter-spacing: .12em;
-  font-size: .65rem;
+  font-size: .90rem;
   color: var(--muted);
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .education-card {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 }
 
 .education-card strong {
-  font-size: .88rem;
+  font-size: 0.95rem;
   line-height: 1.4;
   font-weight: 500;
 }
 
 .education-card span {
   color: var(--muted);
-  font-size: .75rem;
+  font-size: .85rem;
   line-height: 1.5;
 }
 
 .education-card small {
   color: var(--muted);
-  font-size: .65rem;
+  font-size: .85rem;
   line-height: 1.4;
 }
 
