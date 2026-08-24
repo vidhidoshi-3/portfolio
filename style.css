@@ -702,6 +702,10 @@ h2 em {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--muted);
+  width: 100%
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: normal;
 }
 
 .contact {
