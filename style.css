@@ -311,7 +311,7 @@ h2 em {
 .work,
 .about,
 .experience {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 .section-head {
@@ -612,33 +612,33 @@ h2 em {
 .skill-label {
   text-transform: uppercase;
   letter-spacing: .12em;
-  font-size: .80rem;
+  font-size: .65rem;
   color: var(--muted);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .education-card {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }
 
 .education-card strong {
-  font-size: 0.95rem;
+  font-size: .88rem;
   line-height: 1.4;
   font-weight: 500;
 }
 
 .education-card span {
   color: var(--muted);
-  font-size: .85rem;
+  font-size: .75rem;
   line-height: 1.5;
 }
 
 .education-card small {
   color: var(--muted);
-  font-size: .75rem;
+  font-size: .65rem;
   line-height: 1.4;
 }
 
@@ -1090,6 +1090,7 @@ h2 em {
 }
 
 .theme-section-description {
+  max-width: 690px;
   margin: 20px 0 0;
   color: var(--muted);
   font-size: .92rem;
@@ -1189,6 +1190,6 @@ h2 em {
 
   .skill-grid span {
     padding: 7px 9px;
-    font-size: .90rem;
+    font-size: .62rem;
   }
 }
