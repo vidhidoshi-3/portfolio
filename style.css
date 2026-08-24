@@ -1090,7 +1090,6 @@ h2 em {
 }
 
 .theme-section-description {
-  max-width: 690px;
   margin: 20px 0 0;
   color: var(--muted);
   font-size: .92rem;
