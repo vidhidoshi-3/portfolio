@@ -102,7 +102,7 @@ const projects = [
     description: "Examining mobility and street-safety conditions around two proposed Transit-Oriented Development zones. Survey data and local mobility parameters were used to identify opportunities for safer movement and stronger public-realm connections.",
     role: "Mobility Analysis · TOD Planning · Safety Audits · LAMP Assessment · Placemaking · Public Realm",
     driveUrl: "https://drive.google.com/drive/folders/1mPhn4nCrZdKhKIZn-UI6ORdkcJbyxeen?usp=drive_link",
-    videoUrl: "https://dult.karnataka.gov.in/uploads/media_to_upload1700045435.pdf"
+    videoUrl: ""
   },
   {
     theme: "township",
