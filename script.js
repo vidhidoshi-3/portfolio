@@ -29,6 +29,19 @@ const projects = [
   {
     theme: "educational",
     number: "01",
+    name: "Adani University",
+    subtitle: "52-acre University Campus  ·  Ahmedabad",
+    year: "2026",
+    tags: "Master Planning · Campus Design · Concept Development",
+    image: "assets/images/assets/images/Adani_uni_ahm.jpeg",
+    description: "A landscape-led masterplan for a new university campus in Bhat–Koteshwar, Ahmedabad, structured around the relationship between learning, landscape and the waterfront. Set along the Sabarmati’s broader landscape, the masterplan establishes a network of academic, residential and social precincts linked by pedestrian spines, shared spaces and a sequence of public thresholds.",
+    role: "Concept Development · Master Planning · Campus Planning Iterations",
+    driveUrl: "https://drive.google.com/file/d/1LpVPEJulIyofibPwKQrAlbW6wWdbLLab/view?usp=drive_link",
+    videoUrl: ""
+  },
+  {
+    theme: "educational",
+    number: "02",
     name: "IIM Mumbai",
     subtitle: "65-acre Campus Redevelopment  ·  Mumbai",
     year: "2024—25",
@@ -41,7 +54,7 @@ const projects = [
   },
   {
     theme: "educational",
-    number: "02",
+    number: "03",
     name: "IIT Dhanbad",
     subtitle: "200-acre Brownfield Campus  ·  Dhanbad",
     year: "2024—25",
@@ -54,7 +67,7 @@ const projects = [
   },
   {
     theme: "sports",
-    number: "03",
+    number: "04",
     name: "Bengaluru Sports City",
     subtitle: "20-acre Inclusive Sports City  ·  Bengaluru",
     year: "2024—25",
@@ -67,7 +80,7 @@ const projects = [
   },
   {
     theme: "community",
-    number: "04",
+    number: "05",
     name: "Goa Fisheries",
     subtitle: "Community Infrastructure · 25 Sites  ·  Goa",
     year: "2024—25",
@@ -80,7 +93,7 @@ const projects = [
   },
   {
     theme: "transport",
-    number: "05",
+    number: "06",
     name: "MSRTC",
     subtitle: "Bus Stations & Depots · 12 Sites  ·  Maharashtra",
     year: "2024—25",
@@ -93,7 +106,7 @@ const projects = [
   },
   {
     theme: "tod",
-    number: "06",
+    number: "07",
     name: "LAMP & Safety Audit",
     subtitle: "Transit-Oriented Development Zones  ·  Bengaluru",
     year: "2023",
@@ -106,7 +119,7 @@ const projects = [
   },
   {
     theme: "township",
-    number: "07",
+    number: "08",
     name: "BLEND.in",
     subtitle: "300-acre Integrated Township · Gandhinagar",
     year: "Academic",
@@ -119,7 +132,7 @@ const projects = [
   },
   {
     theme: "public-realm",
-    number: "08",
+    number: "09",
     name: "Infusing Edges",
     subtitle: "Institutional Edges  ·  Ahmedabad",
     year: "Academic",
@@ -132,7 +145,7 @@ const projects = [
   },
   {
     theme: "public-realm",
-    number: "09",
+    number: "10",
     name: "Shivranjani Cross Road",
     subtitle: "Urban Intersection  ·  Ahmedabad",
     year: "Academic",
@@ -151,13 +164,13 @@ const experiences = [
     date: "May 2026 — Present",
     org: "INI Design Studio",
     role: "Urban Designer · Bengaluru/Ahmebadad",
-    note: "Plotting documentation, Boulevard design, Campus Masterplan conceptualisation"
+    note: "Adani University Campus Masterplan conceptualization, Landscape Intent for Godrej Plotting Scheme, Plotting Documentation, Boulevard Design for TIFR Hyderabad"
   },
   {
     date: "Jul 2024 — Oct 2025",
     org: "Shashi Prabhu & Associates",
     role: "Urban Designer · Mumbai",
-    note: "Institutional campuses, sports city, fisheries infrastructure, MSRTC transport sites and additional bid / concept design work."
+    note: "IIM Mumbai and IIT Dhanbad Institutional campuses, sports city, fisheries infrastructure, MSRTC transport sites and additional bid / concept design work."
   },
   {
     date: "May 2023 — Jul 2023",
