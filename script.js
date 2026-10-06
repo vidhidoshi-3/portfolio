@@ -33,7 +33,7 @@ const projects = [
     subtitle: "52-acre University Campus  ·  Ahmedabad",
     year: "2026",
     tags: "Master Planning · Campus Design · Concept Development",
-    image: "assets/images/assets/images/Adani_uni_ahm.jpeg",
+    image: "assets/images/Adani_uni_ahm.jpeg",
     description: "A landscape-led masterplan for a new university campus in Bhat–Koteshwar, Ahmedabad, structured around the relationship between learning, landscape and the waterfront. Set along the Sabarmati’s broader landscape, the masterplan establishes a network of academic, residential and social precincts linked by pedestrian spines, shared spaces and a sequence of public thresholds.",
     role: "Concept Development · Master Planning · Campus Planning Iterations",
     driveUrl: "https://drive.google.com/file/d/1LpVPEJulIyofibPwKQrAlbW6wWdbLLab/view?usp=drive_link",
